@@ -6,8 +6,8 @@ import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # API 配置
-api_key = "sk-gFg0c7Xn9WvFg2XI09Fa4d28Aa28425fA7016b3e3785E475"  # 请替换为您的 API Key  
-api_base = "https://maas-api.cn-huabei-1.xf-yun.com/v1"  
+api_key = "***"  # 请替换为您的 API Key  
+api_base = "***"  
 
 client = OpenAI(api_key=api_key, base_url=api_base)
 
@@ -58,7 +58,7 @@ def clean_single_text(raw_text):
 
     try:
         response = client.chat.completions.create(
-            model="xdeepseekr1",
+            model="***", # 替换为您的模型
             messages=[{"role": "user", "content": content}],
             stream=False,
             temperature=0.7,
