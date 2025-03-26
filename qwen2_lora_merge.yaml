@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /home/hz1/rzhong/Qwen2.5/LLaMA-Factory/output/QwQ-32B-Preview-Instruct/lora/train_2025-03-20-10-02-27_cpt
+adapter_name_or_path: /home/hz1/rzhong/Qwen2.5/LLaMA-Factory/saves/QwQ-32B-Preview-Instruct/lora/train_2025-03-20-10-02-27_sft_lora
+template: qwen
+trust_remote_code: true
+
+### export
+export_dir: output/QwQ-32B-Preview-Instruct/lora/train_2025-03-20-10-02-27_sft
+export_size: 5
+export_device: auto
+export_legacy_format: false

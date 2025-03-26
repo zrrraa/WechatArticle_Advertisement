@@ -1,0 +1,5 @@
+model_name_or_path: /home/hz1/rzhong/Qwen2.5/LLaMA-Factory/output/QwQ-32B-Preview-Instruct/lora/train_2025-03-20-10-02-27_cpt
+adapter_name_or_path: /home/hz1/rzhong/Qwen2.5/LLaMA-Factory/saves/QwQ-32B-Preview-Instruct/lora/train_2025-03-20-10-02-27_sft_lora
+template: qwen
+infer_backend: huggingface  # choices: [huggingface, vllm]
+trust_remote_code: true
